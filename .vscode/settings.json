@@ -6,18 +6,18 @@
     },
     "sqflint.ignoredVariables": [
         "CBA_Settings_fnc_init",
-        "KP_param_cratefiller_spawnAndDelete",
-        "KP_param_cratefiller_generatePreset",
-        "KP_param_cratefiller_buildings",
-        "KP_param_cratefiller_crates",
-        "KP_param_cratefiller_items",
-        "KP_param_cratefiller_blacklist",
-        "KP_param_cratefiller_additional",
-        "KP_param_cratefiller_usageRadius",
-        "KP_param_cratefiller_interactRadius",
-        "KP_param_cratefiller_cratefillerOverview",
-        "KP_param_cratefiller_useAceActions",
-        "KP_param_cratefiller_inventoryblacklist"
+        "KPCF_cratefiller_param_spawnAndDelete",
+        "KPCF_cratefiller_param_generatePreset",
+        "KPCF_cratefiller_param_buildings",
+        "KPCF_cratefiller_param_crates",
+        "KPCF_cratefiller_param_items",
+        "KPCF_cratefiller_param_blacklist",
+        "KPCF_cratefiller_param_additional",
+        "KPCF_cratefiller_param_usageRadius",
+        "KPCF_cratefiller_param_interactRadius",
+        "KPCF_cratefiller_param_cratefillerOverview",
+        "KPCF_cratefiller_param_useAceActions",
+        "KPCF_cratefiller_param_inventoryblacklist"
     ],
     "psi-header.lang-config": [
         {

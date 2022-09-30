@@ -1,0 +1,11 @@
+name = "Killah Potatoes Crate Filler"
+prefix = "KPCF"
+author = "Cat Harsis"
+template = "cba"
+mainprefix = "z"
+folder_optionals = true
+sig_version = 3
+files = [
+	"mod.cpp",
+	"*.paa"
+]

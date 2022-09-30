@@ -13,13 +13,6 @@
         * KPGUI
 */
 
-diag_log "AASDHASDASDAS";
-diag_log "AASDHASDASDAS";
-diag_log "AASDHASDASDAS";
-diag_log "AASDHASDASDAS";
-diag_log "AASDHASDASDAS";
-
-
 // Only run, when we've a real player
 if (hasInterface) then {
 

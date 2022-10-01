@@ -292,7 +292,7 @@ class KP_cratefiller {
             x = KP_GETCX(KP_X_VAL_S,KP_WIDTH_VAL_S,8,16);
             y = KP_GETCY(KP_Y_VAL_S,KP_HEIGHT_VAL_S,14,48);
             w = KP_GETW(KP_WIDTH_VAL_S,(16/7));
-            h = KP_GETH(KP_HEIGHT_VAL_S,(48/32));
+            h = KP_GETH(KP_HEIGHT_VAL_S,(52/32));
 
             columns[] = {0.05, 0.2, 0.3};
 

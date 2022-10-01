@@ -1,6 +1,7 @@
 # KP Cratefiller
 
-Made into a mod by Cat Harsis.
+Made into a mod by Cat Harsis. This branch is [available in the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
+
 
 ## Description
 ![cfpreview](https://i.imgur.com/f1SBQzP.jpg)
@@ -21,6 +22,7 @@ You can spawn and delete defined crates, fill these crates and also other object
 * Overview of the present object inventory
 * Export and import function for inventories
 * Squad and Player overview for easy supplies of several players
+* Now actually a mod!
 
 ## Languages
 

@@ -1,7 +1,7 @@
 # KP Cratefiller
 
 Made into a mod by Cat Harsis.
-This branch is not in the workshop. For that version see [the 1.2 branch](https://github.com/TACHarsis/KP-Cratefiller/blob/KPCF-v1.2.0) or go directly to the [mod as a workshop item](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
+This branch is not in the workshop and is lacking any way to change settings. For a complete version see [the 1.2 branch](https://github.com/TACHarsis/KP-Cratefiller/blob/KPCF-v1.2.0) or go directly to the [mod as a workshop item](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
 
 ## Description
 ![cfpreview](https://i.imgur.com/f1SBQzP.jpg)
@@ -14,13 +14,14 @@ You can spawn and delete defined crates, fill these crates and also other object
 
 * Clear designed dialog
 * Detection of cratefiller objects via classname
-* Own config file for several things (base and spawn object, working radius, crates and available items)
+* ~~Own config file for several things (base and spawn object, working radius, crates and available items)~~ (currently all hardcoded)
 * Spawn and delete defined crates
 * Generated selection of magazines and attachments for a pre selected weapon
 * Generated item lists
 * Easy management of large amounts of supplies
 * Overview of the present object inventory
 * Export and import function for inventories
+* Now a mod
 
 ## Languages
 
@@ -50,16 +51,11 @@ The mod does not respect the arsenal whitelist of KP Liberation (neither did the
 ## For Support join the Killah Potatoes discord and move in the `#kpcf`channel.
 
 This is not an official KP mod, so don't expect them to help you with problems or features introduced by this fork. I do hang out there, tho, and will help where I can.
-
-## Planned features
-
-* TBA
-
-# Dubjunks Scripts
-[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/dubjunks-scripts.svg)](https://github.com/KillahPotatoes/dubjunks-scripts/releases)
-[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/dubjunks-scripts/total.svg)](https://github.com/KillahPotatoes/dubjunks-scripts)
-
 [Killah Potatoes Discord](https://discord.gg/fjSPn8t)
+
+## Considered features
+
+* Maybe find a way to enable settings without adding CBA settings to it. But really, you'll want the version in the [1.2 Branch](https://github.com/TACHarsis/KP-Cratefiller/blob/KPCF-v1.2.0).
 
 ## Licence
 Copyright (C) 2018 [Dubjunk](https://github.com/Dubjunk)

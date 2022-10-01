@@ -41,6 +41,15 @@ Supported:
 It's a mod! Either you know how to build it yourself or you can just [get it from the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
 Check the Addon Options to set it up to your liking.
 
+## How to use with KP Liberation
+
+Just load it with the preset. 
+The mod does not respect the arsenal whitelist of KP Liberation (neither did the script) and you will have to that manually via whitelist/blacklist in the Addon Settings.
+
+## For Support join the Killah Potatoes discord and move in the `#kpcf`channel.
+
+This is not an official KP mod, so don't expect them to help you with problems or features introduced by this fork. I do hang out there, tho, and will help where I can.
+
 ## Planned features
 
 * TBA

@@ -16,7 +16,7 @@ You can spawn and delete defined crates, fill these crates and also other object
 ## Features
 
 * Clear designed dialog
-* detection of cratefiller objects via classname
+* Detection of cratefiller objects via classname
 * Own config file for several things (base and spawn object, working radius, crates and available items)
 * Spawn and delete defined crates
 * Generated selection of magazines and attachments for a pre selected weapon
@@ -42,28 +42,8 @@ Supported:
 
 ## How to use
 
-Download the latest releases from the [Releases Tab](https://github.com/KillahPotatoes/dubjunks-scripts/releases) and extract the archive.
-
-Move the folder `KPGUI` and `KPCF` plus the files `description.ext` `KPCF_config.sqf` and `stringtable.xml` to the root of your mission folder, e.g.: exampleMission.Altis
-
-If you already have a `description.ext` you need to do the following instructions:
-
-* add the following to your file:
-
-    #include "KPGUI\KPGUI_defines.hpp"
-    #include "KPCF\ui\KPCF_dialog.hpp"
-
-* If you don't have a `CfgFunctions` definition in your file, you need to add the following:
-
-    class CfgFunctions {
-        #include "KPCF\KPCF_functions.hpp"
-    };
-
-* If you have a `CfgFunctions` definition in your file, you need to add `#include "KPCF\KPCF_functions.hpp"` to your `CfgFunctions`
-
-Now you're done!
-
-For Support join the Killah Potatoes discord and move in the `#kp-mods`channel.
+It's a mod! Either you know how to build it yourself or you can just [get it from the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
+Check the Addon Options to set it up to your liking.
 
 ## Planned features
 
@@ -71,6 +51,7 @@ For Support join the Killah Potatoes discord and move in the `#kp-mods`channel.
 
 ## Licence
 Copyright (C) 2018 [Dubjunk](https://github.com/Dubjunk)
+Copyright (C) 2022 [Cat Harsis](https://github.com/TACHarsis)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

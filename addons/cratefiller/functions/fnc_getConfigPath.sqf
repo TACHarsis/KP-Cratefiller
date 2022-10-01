@@ -2,9 +2,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(getConfigPath)
+    KPCF_cratefiller_fnc_getConfigPath
 
-    File: fnc_cratefiller_getConfigPath.sqf
+    File: fnc_getConfigPath.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
     Last Update: 2020-01-21

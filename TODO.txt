@@ -1,8 +1,6 @@
 * Newly requested crate is not auto selected as current crate
-* inventory list overlaps with Clear Storage button
 * Delete preset button easily mistaken for clear inventory button
 * Inventory list does not update when you store the last crate
 * Inventory list does not update when you create only crate
 * Search for Magazine weapon type does not work
-* changing interaction distance midgame has no effect on cratefillers that were spawned before the change
-* changing cratefiller classes does not affect objects of these classes that were spawned before the change
+* Replace distance check in fnc_spawnCrate

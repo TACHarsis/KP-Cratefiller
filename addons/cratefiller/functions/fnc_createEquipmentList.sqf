@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(createEquipmentList)
+    KPCF_cratefiller_fnc_createEquipmentList
 
-    File: fnc_cratefiller_createEquipmentList.sqf
+    File: fnc_createEquipmentList.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

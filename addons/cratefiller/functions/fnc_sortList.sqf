@@ -2,9 +2,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(sortList)
+    KPCF_cratefiller_fnc_sortList
 
-    File: fnc_cratefiller_sortList.sqf
+    File: fnc_sortList.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
     Last Update: 2020-01-21

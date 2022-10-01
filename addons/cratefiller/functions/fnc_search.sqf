@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(search)
+    KPCF_cratefiller_fnc_search
 
-    File: fnc_cratefiller_search.sqf
+    File: fnc_search.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-10

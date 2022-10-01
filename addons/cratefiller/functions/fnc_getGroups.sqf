@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(getGroups)
+    KPCF_cratefiller_fnc_getGroups
 
-    File: fnc_cratefiller_getGroups.sqf
+    File: fnc_getGroups.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
     Last Update: 2020-02-05

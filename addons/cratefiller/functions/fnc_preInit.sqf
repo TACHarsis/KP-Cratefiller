@@ -2,9 +2,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(preInit)
+    KPCF_cratefiller_fnc_preInit
 
-    File: fnc_cratefiller_preInit.sqf
+    File: fnc_preInit.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2019-05-09
     Last Update: 2020-10-14
@@ -27,7 +27,7 @@ if (isServer) then {diag_log format ["[KP] [%1] [PRE] [CRATEFILLER] Module initi
 */
 
 // Check for ACE
-KP_ace_enabled = isClass (configFile >> "CfgPatches" >> "ace_main");
+GVAR(aceLoaded)= isClass (configFile >> "CfgPatches" >> "ace_main");
 
 
 // Process CBA Settings

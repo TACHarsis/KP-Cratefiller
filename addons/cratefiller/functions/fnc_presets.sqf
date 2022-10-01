@@ -2,12 +2,12 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(presets)
+    KPCF_cratefiller_fnc_presets
 
-    File: fnc_cratefiller_presets.sqf
+    File: fnc_presets.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
-    Last Update: 2020-10-14
+    Last Update: 2022-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -37,7 +37,6 @@ private _blacklist = [];
 
 // Convert CBA settings array
 _buildings = parseSimpleArray GVAR(param_buildings);
-diag_log format ["CBA settings conversion: %1 || %2", GVAR(param_buildings), _buildings];
 _crates = [parseSimpleArray GVAR(param_crates)] call FUNC(sortList);
 _inventoryBlacklist = parseSimpleArray GVAR(param_inventoryBlacklist);
 _classNames = parseSimpleArray GVAR(param_items);
@@ -45,6 +44,8 @@ _additional = parseSimpleArray GVAR(param_additional);
 _blacklist = parseSimpleArray GVAR(param_blacklist);
 
 CSVAR("buildings", _buildings);
+call FUNC(handleBuildings);
+
 CSVAR("crates", _crates);
 CSVAR("inventoryBlacklist", _inventoryBlacklist);
 CSVAR("classNames", _classNames);

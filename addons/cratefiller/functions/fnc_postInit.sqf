@@ -2,12 +2,12 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(postInit)
+    KPCF_cratefiller_fnc_postInit
 
-    File: fnc_cratefiller_postInit.sqf
+    File: fnc_postInit.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2019-05-09
-    Last Update: 2020-10-14
+    Last Update: 2022-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -30,20 +30,8 @@ if (isServer) then {
 
 };
 
-// Player section
-if (hasInterface) then {
-
-    private _crateFillerClasses = CGVAR("buildings", []);
-    // Add CBA event handler to the base objects
-    {
-        [_x, "init", {[_this select 0] call FUNC(manageActions);}, nil, nil, true] call CBA_fnc_addClassEventHandler;
-    } forEach _crateFillerClasses;
-
-    {
-        [_x] call FUNC(manageActions);
-    } forEach entities [_crateFillerClasses, []];
-
-};
+GVAR(cachedBuildingClasses) = [];
+call FUNC(handleBuildings);
 
 if (isServer) then {diag_log format ["[KP] [%1] [POST] [CRATEFILLER] Module initialized", diag_tickTime];};
 

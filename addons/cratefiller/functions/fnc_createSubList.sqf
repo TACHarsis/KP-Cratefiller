@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(createSubList)
+    KPCF_cratefiller_fnc_createSubList
 
-    File: fnc_cratefiller_createSubList.sqf
+    File: fnc_createSubList.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

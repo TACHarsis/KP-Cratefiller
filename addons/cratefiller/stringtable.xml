@@ -164,8 +164,8 @@
                 <Polish>Wybierz szablon do zaimportowania.</Polish>
             </Key>
             <Key ID="STR_KP_CRATEFILLER_INTERACTRADIUS_TT">
-                <English>Defines the range, in which the cratefiller actions will be accessible.</English>
-                <German>Definiert die Reichweite, in der man auf den Kistenfüller zugreifen kann.</German>
+                <English>Defines the range, in which the cratefiller actions will be accessible. (Vanilla only, ACE ignores this value)</English>
+                <German>Definiert die Reichweite, in der man auf den Kistenfüller zugreifen kann. (Nur Vanilla, wird von ACE ignoriert)</German>
             </Key>
             <Key ID="STR_KP_CRATEFILLER_INVENTORY_TT">
                 <English>Select an inventory that you want to edit.</English>

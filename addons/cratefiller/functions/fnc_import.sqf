@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(import)
+    KPCF_cratefiller_fnc_import
 
-    File: fnc_cratefiller_import.sqf
+    File: fnc_import.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

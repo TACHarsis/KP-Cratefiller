@@ -1,5 +1,6 @@
 PREP(preInit);
 PREP(postInit);
+PREP(handleBuildings), // Handles adding/removing of actions and handlers to cratefiller objects
 PREP(addEquipment); // Adds one of the selected item to the inventory
 PREP(createEquipmentList); // Changes the shown equipment category
 PREP(createSubList); // Creates a list with valueable magazines or attachments
@@ -16,6 +17,7 @@ PREP(getStorage); // Returns the active storage
 PREP(import); // Imports the selected preset
 PREP(manageActions); // Manages the actions
 PREP(manageAceActions); // Manages the ACE actions
+PREP(updateInteractionRange); // update interaction range of actions set on existing objects
 PREP(openDialog); // Open the dialog
 PREP(presets); // Creates the item presets
 PREP(removeEquipment); // Removes the given amount of the selected item in the crate.

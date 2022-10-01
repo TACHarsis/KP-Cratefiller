@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(removeEquipment)
+    KPCF_cratefiller_fnc_removeEquipment
 
-    File: fnc_cratefiller_removeEquipment.sqf
+    File: fnc_removeEquipment.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

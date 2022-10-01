@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(deleteCrate)
+    KPCF_cratefiller_fnc_deleteCrate
 
-    File: fnc_cratefiller_deleteCrate.sqf
+    File: fnc_deleteCrate.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-10

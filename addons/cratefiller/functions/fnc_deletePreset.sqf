@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(deletePreset)
+    KPCF_cratefiller_fnc_deletePreset
 
-    File: fnc_cratefiller_deletePreset.sqf
+    File: fnc_deletePreset.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

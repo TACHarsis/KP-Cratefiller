@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(getInventory)
+    KPCF_cratefiller_fnc_getInventory
 
-    File: fnc_cratefiller_getInventory.sqf
+    File: fnc_getInventory.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

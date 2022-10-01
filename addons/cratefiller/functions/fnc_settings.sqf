@@ -1,11 +1,11 @@
 #include "script_component.hpp"
 /*
-    FUNC(settings)
+    KPCF_cratefiller_fnc_settings
 
-    File: fnc_cratefiller_settings.sqf
+    File: fnc_settings.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2019-05-09
-    Last Update: 2020-10-09
+    Last Update: 2022-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -41,7 +41,7 @@
     localize "STR_KP_CRATEFILLER_SETTINGS",
     true,
     1,
-    {if (_this) then { call FUNC(presets); };}
+    {call FUNC(presets);}
 ] call CBA_Settings_fnc_init;
 
 // GVAR(param_buildings)
@@ -145,7 +145,7 @@
     localize "STR_KP_CRATEFILLER_SETTINGS",
     [1, 50, 5, 0],
     1,
-    {}
+    {call FUNC(updateInteractionRange)}
 ] call CBA_Settings_fnc_init;
 
 // GVAR(param_cratefillerOverview)

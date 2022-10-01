@@ -4,9 +4,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(getPlayers)
+    KPCF_cratefiller_fnc_getPlayers
 
-    File: fnc_cratefiller_getPlayers.sqf
+    File: fnc_getPlayers.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
     Last Update: 2020-02-05

@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(openDialog)
+    KPCF_cratefiller_fnc_openDialog
 
-    File: fnc_cratefiller_openDialog.sqf
+    File: fnc_openDialog.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
     Last Update: 2020-07-07

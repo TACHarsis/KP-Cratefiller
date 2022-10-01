@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(export)
+    KPCF_cratefiller_fnc_export
 
-    File: fnc_cratefiller_export.sqf
+    File: fnc_export.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
     Last Update: 2020-02-05

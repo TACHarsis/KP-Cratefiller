@@ -3,9 +3,9 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(showOverview)
+    KPCF_cratefiller_fnc_showOverview
 
-    File: fnc_cratefiller_showOverview.sqf
+    File: fnc_showOverview.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
     Last Update: 2020-02-05

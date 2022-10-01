@@ -3,12 +3,12 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(getNearStorages)
+    KPCF_cratefiller_fnc_getNearStorages
 
-    File: fnc_cratefiller_getNearStorages.sqf
+    File: fnc_getNearStorages.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-01-21
-    Last Update: 2020-10-20
+    Last Update: 2022-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -54,8 +54,8 @@ _blacklist append (GVAR(param_inventoryBlacklist) splitString ", ");
     // If the object has an inventory add it to the list
     if (_number > 0) then {
         _index = _ctrlStorage lbAdd format ["%1m - %2", round ((getPos _object) distance2D _x), getText (_config >> "displayName")];
-        _netId = netId _x;
-        _ctrlStorage lbSetData [_index, netId _x];
+        _netId = _x call BIS_fnc_netId;
+        _ctrlStorage lbSetData [_index, _netId];
         _picture = getText (_config >> "picture");
         if (_picture isEqualTo "pictureThing") then {
             _ctrlStorage lbSetPicture [_index, "\z\KPCF\addons\cratefiller\ui\res\icon_help"];

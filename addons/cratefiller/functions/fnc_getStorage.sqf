@@ -3,12 +3,12 @@
 /*
     Killah Potatoes Cratefiller v1.2.0
 
-    FUNC(getStorage)
+    KPCF_cratefiller_fnc_getStorage
 
-    File: fnc_cratefiller_getStorage.sqf
+    File: fnc_getStorage.sqf
     Author: Dubjunk - https://github.com/KillahPotatoes
     Date: 2020-02-05
-    Last Update: 2020-02-05
+    Last Update: 2022-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -34,7 +34,7 @@ if (_storageIndex isEqualTo -1) exitWith {
 };
 
 // Get the storage object
-private _storage = objectFromNetId (_ctrlStorage lbData _storageIndex);
+private _storage = (_ctrlStorage lbData _storageIndex) call BIS_fnc_objectFromNetId,;
 
 // Check if the storage is in range
 private _object = CCGVAR("object", objNull);

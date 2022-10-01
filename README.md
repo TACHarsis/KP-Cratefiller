@@ -1,6 +1,7 @@
 # KP Cratefiller
 
 Made into a mod by Cat Harsis.
+This branch is not in the workshop. For that version see [the 1.2 branch](https://github.com/TACHarsis/KP-Cratefiller/blob/KPCF-v1.2.0) or go directly to the [mod as a workshop item](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
 
 ## Description
 ![cfpreview](https://i.imgur.com/f1SBQzP.jpg)
@@ -38,7 +39,7 @@ Supported:
 
 ## How to use
 
-It's a mod! Either you know how to build it yourself or you can just [get it from the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
+It's a mod! This branch has to be built manually, tho. [You can get the 1.2 branch from the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861), though. See [1.2 Branch](https://github.com/TACHarsis/KP-Cratefiller/blob/KPCF-v1.2.0) for more information
 Check the Addon Options to set it up to your liking.
 
 ## How to use with KP Liberation

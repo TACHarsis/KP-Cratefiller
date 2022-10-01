@@ -51,6 +51,7 @@ The mod does not respect the arsenal whitelist of KP Liberation (neither did the
 
 ## For Support join the Killah Potatoes discord and move in the `#kpcf`channel.
 
+[Killah Potatoes Discord](https://discord.gg/fjSPn8t)
 This is not an official KP mod, so don't expect them to help you with problems or features introduced by this fork. I do hang out there, tho, and will help where I can.
 
 ## Considered features
@@ -58,14 +59,9 @@ This is not an official KP mod, so don't expect them to help you with problems o
 * Backwards preset compatibility
 * Detecting KP Liberation preset and restricting item access accordingly
 
-# Dubjunks Scripts
-[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/dubjunks-scripts.svg)](https://github.com/KillahPotatoes/dubjunks-scripts/releases)
-[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/dubjunks-scripts/total.svg)](https://github.com/KillahPotatoes/dubjunks-scripts)
-
-[Killah Potatoes Discord](https://discord.gg/fjSPn8t)
-
 ## Licence
 Copyright (C) 2018 [Dubjunk](https://github.com/Dubjunk)
+
 Copyright (C) 2022 [Cat Harsis](https://github.com/TACHarsis)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.

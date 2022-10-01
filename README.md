@@ -1,10 +1,6 @@
-# Dubjunks Scripts
-[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/dubjunks-scripts.svg)](https://github.com/KillahPotatoes/dubjunks-scripts/releases)
-[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/dubjunks-scripts/total.svg)](https://github.com/KillahPotatoes/dubjunks-scripts)
-
-[Killah Potatoes Discord](https://discord.gg/fjSPn8t)
-
 # KP Cratefiller
+
+Made into a mod by Cat Harsis.
 
 ## Description
 ![cfpreview](https://i.imgur.com/f1SBQzP.jpg)
@@ -48,6 +44,12 @@ Check the Addon Options to set it up to your liking.
 ## Planned features
 
 * TBA
+
+# Dubjunks Scripts
+[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/dubjunks-scripts.svg)](https://github.com/KillahPotatoes/dubjunks-scripts/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/dubjunks-scripts/total.svg)](https://github.com/KillahPotatoes/dubjunks-scripts)
+
+[Killah Potatoes Discord](https://discord.gg/fjSPn8t)
 
 ## Licence
 Copyright (C) 2018 [Dubjunk](https://github.com/Dubjunk)

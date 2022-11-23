@@ -29,19 +29,26 @@ private _ctrlGroups = _dialog displayCtrl KP_CRATEFILLER_IDC_COMBOGROUPS;
 lbClear _ctrlGroups;
 
 // Get all player groups
-private _groups = [];
+private _groups = createHashMap;
+private _allPlayersNoHeadless = allPlayers - (entities "HeadlessClient_F");
 {
-    _groups pushBackUnique group _x;
-} forEach (allPlayers - (entities "HeadlessClient_F"));
-_groups = _groups - [grpNull];
-_groups sort true;
+    private _side = _x;
+    private _sidePlayers = _allPlayersNoHeadless select { side _x isEqualTo _side};
+    private _sideGroups = [];
+    {
+        _sideGroups pushBackUnique group _x;
+    } forEach _sidePlayers;
 
+    _sideGroups = _sideGroups - [grpNull];
+    _sideGroups sort true;
+    _groups set [_side, _sideGroups];
+} foreach [west,east,independent];
 // Cache the groups
 CCSVAR("groups", _groups, false);
 
 // Fill the list
 {
     _index = _ctrlGroups lbAdd groupId _x;
-} forEach _groups;
+} forEach _groups getOrDefault [side player,[]];
 
 true

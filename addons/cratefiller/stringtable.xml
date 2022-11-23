@@ -275,13 +275,29 @@
                 <English>Enable cratefiller equipment overview</English>
                 <German>Kistenfüller Ausrüstungsübersicht aktivieren</German>
             </Key>
-            <Key ID="STR_KP_CRATEFILLER_ADDITIONAL">
-                <English>Cratefiller additional items</English>
-                <German>Kistenfüller zusätzliche Items</German>
+            <Key ID="STR_KP_CRATEFILLER_ADDITIONAL_W">
+                <English>Cratefiller additional items (West)</English>
+                <German>Kistenfüller zusätzliche Items (West)</German>
             </Key>
-            <Key ID="STR_KP_CRATEFILLER_BLACKLIST">
-                <English>Cratefiller blacklist</English>
-                <German>Kistenfüller Blacklist</German>
+            <Key ID="STR_KP_CRATEFILLER_ADDITIONAL_E">
+                <English>Cratefiller additional items (East)</English>
+                <German>Kistenfüller zusätzliche Items (Ost)</German>
+            </Key>
+            <Key ID="STR_KP_CRATEFILLER_ADDITIONAL_I">
+                <English>Cratefiller additional items (Independent)</English>
+                <German>Kistenfüller zusätzliche Items (Unabhängig)</German>
+            </Key>
+            <Key ID="STR_KP_CRATEFILLER_BLACKLIST_W">
+                <English>Cratefiller blacklist (West)</English>
+                <German>Kistenfüller Blacklist (West)</German>
+            </Key>
+            <Key ID="STR_KP_CRATEFILLER_BLACKLIST_E">
+                <English>Cratefiller blacklist (East)</English>
+                <German>Kistenfüller Blacklist (Ost)</German>
+            </Key>
+            <Key ID="STR_KP_CRATEFILLER_BLACKLIST_I">
+                <English>Cratefiller blacklist (Independent)</English>
+                <German>Kistenfüller Blacklist (Unabhängig)</German>
             </Key>
             <Key ID="STR_KP_CRATEFILLER_BUILDINGS">
                 <English>Defines the cratefiller objects</English>
@@ -303,9 +319,17 @@
                 <English>Inventory blacklist</English>
                 <German>Gesperrte Frachträume</German>
             </Key>
-            <Key ID="STR_KP_CRATEFILLER_ITEMS">
-                <English>Cratefiller items</English>
-                <German>Kistenfüller Gegenstände</German>
+            <Key ID="STR_KP_CRATEFILLER_ITEMS_W">
+                <English>Cratefiller items (West)</English>
+                <German>Kistenfüller Gegenstände (West)</German>
+            </Key>
+            <Key ID="STR_KP_CRATEFILLER_ITEMS_E">
+                <English>Cratefiller items (East)</English>
+                <German>Kistenfüller Gegenstände (Ost)</German>
+            </Key>
+            <Key ID="STR_KP_CRATEFILLER_ITEMS_I">
+                <English>Cratefiller items (Independent)</English>
+                <German>Kistenfüller Gegenstände (Unabhängig)</German>
             </Key>
             <Key ID="STR_KP_CRATEFILLER_SETTINGS">
                 <English>KP - Cratefiller</English>

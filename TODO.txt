@@ -4,3 +4,4 @@
 * Inventory list does not update when you create only crate
 * Search for Magazine weapon type does not work
 * Replace distance check in fnc_spawnCrate
+* Presets are not checked against whitelist/blacklist

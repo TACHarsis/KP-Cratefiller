@@ -34,7 +34,8 @@ lbClear _ctrlPlayers;
 private _index = lbCurSel _ctrlGroups;
 
 // Get the selected group from the namespace
-private _group = (CCGVAR("groups", [])) select _index;
+private _sideGroups = (CCGVAR("groups", createHashMap)) getOrDefault [side player,[]];
+private _group = _sideGroups select _index;
 
 // Get all units from the group
 private _players = (units _group) select {isPlayer _x};

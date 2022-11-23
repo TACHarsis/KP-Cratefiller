@@ -44,16 +44,33 @@ if (_catIndex isEqualTo -1) exitWith {};
 
 // Variables
 private _config = "";
+private _playerSide = side player;
+private _weapons = CGVAR("weapons", createHashMap) getOrDefault [_playerSide, []];
+private _grenades = CGVAR("grenades", createHashMap) getOrDefault [_playerSide, []];
+private _explosives = CGVAR("explosives", createHashMap) getOrDefault [_playerSide,[]];
+private _items = CGVAR("items", createHashMap) getOrDefault [_playerSide,[]];
+private _backpacks = CGVAR("backpacks", createHashMap) getOrDefault [_playerSide,[]];
+
+diag_log format["hmm:
+%1
+%2
+%3
+%4
+%5
+%6",_playerSide, count _weapons, count _grenades, count _explosives, count _items, count _backpacks];
+
+diag_log format["weapons:", _weapons];
 
 switch (_catIndex) do {
 
     // Weapons
     case 0 : {
         {
+            diag_log format["_x: %1",_x];
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlEquipment lnbAddRow ["", _x select 0];
             _ctrlEquipment lnbSetPicture [[_foreachIndex, 0], getText (_config >> "picture")];
-        } forEach (CGVAR("weapons", []));
+        } forEach (_weapons);
         CCSVAR("activeCat", "weapons", false);
     };
 
@@ -66,7 +83,7 @@ switch (_catIndex) do {
             _ctrlWeapon lbSetData [_index , _x select 1];
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlWeapon lbSetPicture [_index, getText (_config >> "picture")];
-        } forEach (CGVAR("weapons", []));
+        } forEach (_weapons);
         CCSVAR("activeCat", "magazines", false);
     };
 
@@ -79,7 +96,7 @@ switch (_catIndex) do {
             _ctrlWeapon lbSetData [_index , _x select 1];
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlWeapon lbSetPicture [_index, getText (_config >> "picture")];
-        } forEach (CGVAR("weapons", []));
+        } forEach (_weapons);
         CCSVAR("activeCat", "attachments", false);
     };
 
@@ -89,7 +106,7 @@ switch (_catIndex) do {
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlEquipment lnbAddRow ["", _x select 0];
             _ctrlEquipment lnbSetPicture [[_foreachIndex, 0], getText (_config >> "picture")];
-        } forEach (CGVAR("grenades", []));
+        } forEach (_grenades);
         CCSVAR("activeCat", "grenades", false);
     };
 
@@ -99,7 +116,7 @@ switch (_catIndex) do {
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlEquipment lnbAddRow ["", _x select 0];
             _ctrlEquipment lnbSetPicture [[_foreachIndex, 0], getText (_config >> "picture")];
-        } forEach (CGVAR("explosives", []));
+        } forEach (_explosives);
         CCSVAR("activeCat", "explosives", false);
     };
 
@@ -109,7 +126,7 @@ switch (_catIndex) do {
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlEquipment lnbAddRow ["", _x select 0];
             _ctrlEquipment lnbSetPicture [[_foreachIndex, 0], getText (_config >> "picture")];
-        } forEach (CGVAR("items", []));
+        } forEach (_items);
         CCSVAR("activeCat", "items", false);
     };
 
@@ -119,10 +136,9 @@ switch (_catIndex) do {
             _config = [_x select 1] call FUNC(getConfigPath);
             _ctrlEquipment lnbAddRow ["", _x select 0];
             _ctrlEquipment lnbSetPicture [[_foreachIndex, 0], getText (_config >> "picture")];
-        } forEach (CGVAR("backpacks", []));
+        } forEach (_backpacks);
         CCSVAR("activeCat", "backpacks", false);
     };
-
 };
 
 true

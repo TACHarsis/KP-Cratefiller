@@ -42,6 +42,8 @@ private _weaponType = _ctrlWeapon lbData _weaponIndex;
 
 // Variables
 private _config = "";
+private _sidePlayer = side player;
+private _blacklist = CGVAR("blacklist", createHashMap) getOrDefault [_sidePlayer,[]];
 
 switch (_catIndex) do {
 
@@ -51,9 +53,12 @@ switch (_catIndex) do {
         private _glType = (getArray (configfile >> "CfgWeapons" >> _weaponType >> "muzzles")) select 1;
         private _magazines = [_weaponType] call CBA_fnc_compatibleMagazines;
         _magazines append ([configfile >> "CfgWeapons" >> _weaponType >> _glType] call CBA_fnc_compatibleMagazines);
-        _magazines = _magazines - CGVAR("blacklist", []);
+        _magazines = _magazines - _blacklist;
+
         private _sortedMagazines = [_magazines] call FUNC(sortList);
-        CSVAR("magazines", _sortedMagazines);
+        private _savedMagazines = CGVAR("magazines", createHashMap);
+        _savedMagazines set [_sidePlayer, _sortedMagazines];
+        CSVAR("magazines", _savedMagazines);
 
         // Fill controls
         {
@@ -67,9 +72,11 @@ switch (_catIndex) do {
     case 2 : {
         // Get compatible attachments
         private _attachments = [_weaponType] call BIS_fnc_compatibleItems;
-        _attachments = _attachments - CGVAR("blacklist", []);
+        _attachments = _attachments - _blacklist;
         private _sortedAttachments = [_attachments] call FUNC(sortList);
-        CSVAR("attachments", _sortedAttachments);
+        private _savedAttachements = CSVAR("attachments", createHashMap);
+        _savedAttachements set [_sidePlayer, _sortedAttachments];
+        CSVAR("attachments", _savedAttachements);
 
         // Fill controls
         {

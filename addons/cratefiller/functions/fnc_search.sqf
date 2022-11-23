@@ -34,7 +34,7 @@ _ctrlWeapon lbSetCurSel -1;
 private _search = toLower (ctrlText _ctrlSearch);
 
 // Get the available weapons
-private _weapons = CGVAR("weapons", []);
+private _weapons = CGVAR("weapons", createHashMap) getOrDefault [side player, []];
 
 // Variables
 private _foundWeapons = [];

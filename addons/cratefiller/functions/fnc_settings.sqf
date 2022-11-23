@@ -87,9 +87,29 @@
 // Classnames of the items which should be available at the cratefiller on deactivated preset generation.
 // Default: ["arifle_SPAR_01_snd_F", "MMG_01_tan_F", "HandGrenade", "MiniGrenade", "DemoCharge_Remote_Mag", "ATMine_Range_Mag", "FirstAidKit", "ToolKit", "B_FieldPack_cbr", "B_AssaultPack_cbr"]
 [
-    QGVAR(param_items),
+    QGVAR(param_items_w),
     "EDITBOX",
-    [localize "STR_KP_CRATEFILLER_ITEMS", localize "STR_KP_CRATEFILLER_ITEMS_TT"],
+    [localize "STR_KP_CRATEFILLER_ITEMS_W", localize "STR_KP_CRATEFILLER_ITEMS_TT"],
+    localize "STR_KP_CRATEFILLER_SETTINGS",
+    "[""arifle_SPAR_01_snd_F"", ""MMG_01_tan_F"", ""HandGrenade"", ""MiniGrenade"", ""DemoCharge_Remote_Mag"", ""ATMine_Range_Mag"", ""FirstAidKit"", ""ToolKit"", ""B_FieldPack_cbr"", ""B_AssaultPack_cbr""]",
+    1,
+    { call FUNC(presets) }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(param_items_e),
+    "EDITBOX",
+    [localize "STR_KP_CRATEFILLER_ITEMS_E", localize "STR_KP_CRATEFILLER_ITEMS_TT"],
+    localize "STR_KP_CRATEFILLER_SETTINGS",
+    "[""arifle_SPAR_01_snd_F"", ""MMG_01_tan_F"", ""HandGrenade"", ""MiniGrenade"", ""DemoCharge_Remote_Mag"", ""ATMine_Range_Mag"", ""FirstAidKit"", ""ToolKit"", ""B_FieldPack_cbr"", ""B_AssaultPack_cbr""]",
+    1,
+    { call FUNC(presets) }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(param_items_i),
+    "EDITBOX",
+    [localize "STR_KP_CRATEFILLER_ITEMS_I", localize "STR_KP_CRATEFILLER_ITEMS_TT"],
     localize "STR_KP_CRATEFILLER_SETTINGS",
     "[""arifle_SPAR_01_snd_F"", ""MMG_01_tan_F"", ""HandGrenade"", ""MiniGrenade"", ""DemoCharge_Remote_Mag"", ""ATMine_Range_Mag"", ""FirstAidKit"", ""ToolKit"", ""B_FieldPack_cbr"", ""B_AssaultPack_cbr""]",
     1,
@@ -100,9 +120,29 @@
 // Classnames of the items which should be blacklisted from the cratefiller.
 // Default: []
 [
-    QGVAR(param_blacklist),
+    QGVAR(param_blacklist_w),
     "EDITBOX",
-    [localize "STR_KP_CRATEFILLER_BLACKLIST", localize "STR_KP_CRATEFILLER_BLACKLIST_TT"],
+    [localize "STR_KP_CRATEFILLER_BLACKLIST_W", localize "STR_KP_CRATEFILLER_BLACKLIST_TT"],
+    localize "STR_KP_CRATEFILLER_SETTINGS",
+    "[]",
+    1,
+    { call FUNC(presets) }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(param_blacklist_e),
+    "EDITBOX",
+    [localize "STR_KP_CRATEFILLER_BLACKLIST_E", localize "STR_KP_CRATEFILLER_BLACKLIST_TT"],
+    localize "STR_KP_CRATEFILLER_SETTINGS",
+    "[]",
+    1,
+    { call FUNC(presets) }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(param_blacklist_i),
+    "EDITBOX",
+    [localize "STR_KP_CRATEFILLER_BLACKLIST_I", localize "STR_KP_CRATEFILLER_BLACKLIST_TT"],
     localize "STR_KP_CRATEFILLER_SETTINGS",
     "[]",
     1,
@@ -113,9 +153,29 @@
 // Classnames of the items which should be added after the generated to presets to prevent missing items due to bad config entries.
 // Default: []
 [
-    QGVAR(param_additional),
+    QGVAR(param_additional_w),
     "EDITBOX",
-    [localize "STR_KP_CRATEFILLER_ADDITIONAL", localize "STR_KP_CRATEFILLER_ADDITIONAL_TT"],
+    [localize "STR_KP_CRATEFILLER_ADDITIONAL_W", localize "STR_KP_CRATEFILLER_ADDITIONAL_TT"],
+    localize "STR_KP_CRATEFILLER_SETTINGS",
+    "[]",
+    1,
+    { call FUNC(presets) }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(param_additional_e),
+    "EDITBOX",
+    [localize "STR_KP_CRATEFILLER_ADDITIONAL_E", localize "STR_KP_CRATEFILLER_ADDITIONAL_TT"],
+    localize "STR_KP_CRATEFILLER_SETTINGS",
+    "[]",
+    1,
+    { call FUNC(presets) }
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(param_additional_i),
+    "EDITBOX",
+    [localize "STR_KP_CRATEFILLER_ADDITIONAL_I", localize "STR_KP_CRATEFILLER_ADDITIONAL_TT"],
     localize "STR_KP_CRATEFILLER_SETTINGS",
     "[]",
     1,

@@ -1,8 +1,7 @@
 # KP Cratefiller
-[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/KP-cratefiller.svg)](https://github.com/KillahPotatoes/KP-cratefiller/releases)
-[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/KP-cratefiller/total.svg)](https://github.com/KillahPotatoes/KP-cratefiller)
 
-[Killah Potatoes Discord](https://discord.gg/fjSPn8t)
+Made into a mod by Cat Harsis. This branch is [available in the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
+
 
 ## Description
 ![cfpreview](https://i.imgur.com/f1SBQzP.jpg)
@@ -23,6 +22,7 @@ You can spawn and delete defined crates, fill these crates and also other object
 * Overview of the present object inventory
 * Export and import function for inventories
 * Squad and Player overview for easy supplies of several players
+* Now actually a mod!
 
 ## Languages
 
@@ -41,83 +41,28 @@ Supported:
 
 ## How to use
 
-Download the latest releases from the [Releases Tab](https://github.com/KillahPotatoes/KP-cratefiller/releases) and extract the archive.
-
-Move the folder `KP` plus the following files to the root of your mission folder, e.g.: exampleMission.Altis
-`description.ext`
-`LICENSE`
-`README.md`
-`stringtable.xml`
-
-If you already have a `description.ext` you need to do the following instructions:
-
-* add the following to your file:
-
-    #include "KP\KPGUI\KPGUI_defines.hpp"
-
-    #include "KP\KPCF\ui\defines.hpp"
-    #include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
-
-* If you don't have a `CfgFunctions` definition in your file, you need to add the following:
-
-    class CfgFunctions {
-        class KP {
-            #include "KP\KPCF\functions.hpp"
-        };
-    };
-
-* If you have a `CfgFunctions` definition in your file, you need to add:
-
-    class KP {
-        #include "KP\KPCF\functions.hpp"
-    };
-
-Now you're done!
+It's a mod! Either you know how to build it yourself or you can just [get it from the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2869863861).
+Check the Addon Options to set it up to your liking.
 
 ## How to use with KP Liberation
 
-Download the latest releases from the [Releases Tab](https://github.com/KillahPotatoes/KP-cratefiller/releases) and extract the archive.
-
-Move the folder `KP` to the root of your mission folder, e.g.: exampleMission.Altis
-
-Edit the description.ext
-
-* add the following to the end of your file:
-
-    #include "KP\KPCF\ui\defines.hpp"
-    #include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
-
-* Modify lines 230-233 from
-
-    class CfgFunctions {
-        #include "CfgFunctions.hpp"
-        #include "KP\KPPLM\KPPLM_functions.hpp"
-    };
-
-to
-
-    class CfgFunctions {
-        #include "CfgFunctions.hpp"
-        #include "KP\KPPLM\KPPLM_functions.hpp"
-        class KP {
-            #include "KP\KPCF\functions.hpp"
-        };
-    };
-
-Edit the stringtable.xml
-
-* Copy line 4 (<Package name="KPCF">) to line 328 (</Package>) from the cratefiller stringtable into the existing one from liberation
-
-Now you're done!
+Just load it with the preset. 
+The mod does not respect the arsenal whitelist of KP Liberation (neither did the script) and you will have to that manually via whitelist/blacklist in the Addon Settings.
 
 ## For Support join the Killah Potatoes discord and move in the `#kpcf`channel.
 
-## Planned features
+[Killah Potatoes Discord](https://discord.gg/fjSPn8t)
+This is not an official KP mod, so don't expect them to help you with problems or features introduced by this fork. I do hang out there, tho, and will help where I can.
 
-* Mod Conversion
+## Considered features
+
+* Backwards preset compatibility
+* Detecting KP Liberation preset and restricting item access accordingly
 
 ## Licence
 Copyright (C) 2018 [Dubjunk](https://github.com/Dubjunk)
+
+Copyright (C) 2022 [Cat Harsis](https://github.com/TACHarsis)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

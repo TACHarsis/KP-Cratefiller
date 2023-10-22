@@ -6,7 +6,7 @@
 
     File: fnc_handleBuildings.sqf
     Author: Cat Harsis
-            
+
     Date: 2022-10-01
     Last Update: 2022-10-01
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
@@ -33,10 +33,12 @@ private _removedClasses = []; // no longer cratefillers
 if(!isNil QGVAR(cachedBuildingClasses)) then { _removedClasses = GVAR(cachedBuildingClasses) - _crateFillerClasses; };
 
 private _newClasses = _crateFillerClasses - _removedClasses;
-_fnc_initFunction = { 
-    if(typeOf _x in CGVAR("buildings", [])) then { 
-        [_this select 0, true] call FUNC(manageActions);
-    }; 
+
+private _fnc_initFunction = {
+    params ["_object"];
+    if(typeOf _object in CGVAR("buildings", [])) then {
+        [_object, true] call FUNC(manageActions);
+    };
 };
 
 {

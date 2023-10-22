@@ -163,7 +163,7 @@
 
 // GVAR(param_useAceActions)
 // Enables/Disables the ACE interaction usage.
-// Default: false
+// Default: true
 [
     QGVAR(param_useAceActions),
     "CHECKBOX",
@@ -171,8 +171,7 @@
     localize "STR_KP_CRATEFILLER_SETTINGS",
     true,
     1,
-    {},
-	true
+    {}
 ] call CBA_Settings_fnc_init;
 
 true

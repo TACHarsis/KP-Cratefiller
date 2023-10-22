@@ -5,7 +5,14 @@ template = "cba"
 mainprefix = "z"
 folder_optionals = true
 sig_version = 3
-files = [
+[files]
+include = [
     "mod.cpp",
     "*.paa"
 ]
+
+[version]
+git_hash = 0 # Disabled
+
+[asc]
+enabled = true # Default: false
